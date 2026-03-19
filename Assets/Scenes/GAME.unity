@@ -178,6 +178,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1526814149960808, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 429815263}
+    - targetCorrespondingSourceObject: {fileID: 1526814149960808, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 429815264}
   m_SourcePrefab: {fileID: 100100000, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
 --- !u!1 &429815262 stripped
 GameObject:
@@ -211,6 +214,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &429815264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429815262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  G: 500
+  planet: 0
+  orbitSpeed: 1000
 --- !u!1 &649800579
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +389,7 @@ GameObject:
   - component: {fileID: 650909567}
   - component: {fileID: 650909571}
   - component: {fileID: 650909570}
+  - component: {fileID: 650909572}
   m_Layer: 0
   m_Name: asteroid_mod_01_low
   m_TagString: Untagged
@@ -498,6 +517,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.6400861
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &650909572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650909566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  G: 200
+  planet: 0
+  orbitSpeed: 100
 --- !u!1 &869824188
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +545,7 @@ GameObject:
   - component: {fileID: 869824189}
   - component: {fileID: 869824193}
   - component: {fileID: 869824192}
+  - component: {fileID: 869824194}
   m_Layer: 0
   m_Name: asteroid_mod_03_low
   m_TagString: Untagged
@@ -638,6 +673,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.52194536
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &869824194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869824188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  G: 220
+  planet: 0
+  orbitSpeed: 222
 --- !u!1001 &1055728641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -697,6 +747,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1647581975099426, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1055728643}
+    - targetCorrespondingSourceObject: {fileID: 1647581975099426, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1055728644}
   m_SourcePrefab: {fileID: 100100000, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
 --- !u!1 &1055728642 stripped
 GameObject:
@@ -730,6 +783,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1055728644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055728642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  G: 480
+  planet: 0
+  orbitSpeed: 400
 --- !u!1 &1453771389
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +938,7 @@ GameObject:
   - component: {fileID: 1493355912}
   - component: {fileID: 1493355916}
   - component: {fileID: 1493355915}
+  - component: {fileID: 1493355917}
   m_Layer: 0
   m_Name: asteroid_mod_02_low
   m_TagString: Untagged
@@ -997,6 +1066,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5895479
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1493355917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493355911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  G: 200
+  planet: 0
+  orbitSpeed: 100
 --- !u!1001 &1620002026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1056,6 +1140,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1408581670749804, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1620002028}
+    - targetCorrespondingSourceObject: {fileID: 1408581670749804, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1620002029}
   m_SourcePrefab: {fileID: 100100000, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
 --- !u!1 &1620002027 stripped
 GameObject:
@@ -1089,6 +1176,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1620002029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620002027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  G: 300
+  planet: 0
+  orbitSpeed: 30
 --- !u!1001 &1690475273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1164,6 +1266,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1733945558841920, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1690475275}
+    - targetCorrespondingSourceObject: {fileID: 1733945558841920, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1690475276}
   m_SourcePrefab: {fileID: 100100000, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
 --- !u!1 &1690475274 stripped
 GameObject:
@@ -1178,7 +1283,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690475274}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1197,6 +1302,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1690475276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690475274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  G: 1800
+  planet: 1
+  orbitSpeed: 0
 --- !u!1001 &2121279545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1272,6 +1392,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1377197793697218, guid: b4201d402613a4464b35c805dafcca62, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2121279547}
+    - targetCorrespondingSourceObject: {fileID: 1377197793697218, guid: b4201d402613a4464b35c805dafcca62, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2121279548}
   m_SourcePrefab: {fileID: 100100000, guid: b4201d402613a4464b35c805dafcca62, type: 3}
 --- !u!1 &2121279546 stripped
 GameObject:
@@ -1305,6 +1428,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2121279548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121279546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  G: 400
+  planet: 0
+  orbitSpeed: 1000
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
