@@ -223,12 +223,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 429815262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 26c995fbbdc63410fa41a47a3279880a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gravity
-  G: 500
-  planet: 0
-  orbitSpeed: 1000
+  m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isCenterObject: 0
+  orbitSpeed: 20
 --- !u!1 &649800579
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,12 +525,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 650909566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 26c995fbbdc63410fa41a47a3279880a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gravity
-  G: 200
-  planet: 0
-  orbitSpeed: 100
+  m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isCenterObject: 0
+  orbitSpeed: 20
 --- !u!1 &869824188
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,12 +680,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 869824188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 26c995fbbdc63410fa41a47a3279880a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gravity
-  G: 220
-  planet: 0
-  orbitSpeed: 222
+  m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isCenterObject: 0
+  orbitSpeed: 20
 --- !u!1001 &1055728641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -792,12 +789,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1055728642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 26c995fbbdc63410fa41a47a3279880a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gravity
-  G: 480
-  planet: 0
-  orbitSpeed: 400
+  m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isCenterObject: 0
+  orbitSpeed: 20
 --- !u!1 &1453771389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,12 +1071,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1493355911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 26c995fbbdc63410fa41a47a3279880a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gravity
-  G: 200
-  planet: 0
-  orbitSpeed: 100
+  m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isCenterObject: 0
+  orbitSpeed: 20
 --- !u!1001 &1620002026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1185,12 +1180,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1620002027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 26c995fbbdc63410fa41a47a3279880a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gravity
-  G: 300
-  planet: 0
-  orbitSpeed: 30
+  m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isCenterObject: 0
+  orbitSpeed: 20
 --- !u!1001 &1690475273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1283,7 +1277,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690475274}
   serializedVersion: 5
-  m_Mass: 10
+  m_Mass: 1000
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1311,11 +1305,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1690475274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 26c995fbbdc63410fa41a47a3279880a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gravity
-  G: 1800
-  planet: 1
+  m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isCenterObject: 1
   orbitSpeed: 0
 --- !u!1001 &2121279545
 PrefabInstance:
@@ -1437,12 +1430,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2121279546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8102a96e4b9be45d0819a725b7c3bc6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 26c995fbbdc63410fa41a47a3279880a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gravity
-  G: 400
-  planet: 0
-  orbitSpeed: 1000
+  m_EditorClassIdentifier: Assembly-CSharp::Gravitation
+  isCenterObject: 0
+  orbitSpeed: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
